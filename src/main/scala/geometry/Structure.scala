@@ -4,4 +4,6 @@ abstract class Structure
 case class Point(x: Float, y: Float) extends Structure
 case class Vector(override val x: Float, override val y: Float) extends Point(x, y)
 case class Segment (p1: Point, p2: Point) extends Structure
+case class Circle(p: Point, r: Float) extends Structure
+case class Polygon(pn: List[Point]) extends Structure
 
